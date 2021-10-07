@@ -1,0 +1,15 @@
+<div class='container pt-5 pb-5'>
+
+    <p>Click below to get started.</p>
+
+    <div type="button" class="btn btn-primary mb-4" (click)="fetchMyRealData()">E=Mc^2</div>
+    
+    <h1 class="mb-4">Executive Leadership (Feat. Albert Einstein)</h1> 
+
+    <div class='row'>
+        
+        <app-card class="col-12 col-sm-4 col-md-4 col-lg-4 mb-4" *ngFor="let card of cardList" [card]="card"></app-card>
+      
+    </div>
+
+</div>

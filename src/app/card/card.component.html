@@ -1,0 +1,22 @@
+<div class="card" *ngIf="card !== null">
+
+    <img class="card-img-top card-placeImagePlaceHolder" [src]="card.photo_url" />
+
+    <div class="card-body">
+
+      <h3 class="card-title">{{ card.name }}</h3>
+
+      <p class="card-text" style="color: blue;">{{ card.title }}</p>
+
+      <a class="btn" (click)="viewBio()">View Bio</a>
+
+    </div>
+
+</div>
+
+<app-modal *ngIf="showModal && card !== null" 
+            [title]="card.name" 
+            [subtitle]="card.title" 
+            [bodyText]="card.bio"
+            [photo]="card.photo_url"
+            (closeModalEvt)="closeModal()"></app-modal>

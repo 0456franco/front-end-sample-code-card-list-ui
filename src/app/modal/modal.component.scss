@@ -1,0 +1,32 @@
+.modal{
+    background-color: rgba(0,0,0,.25);
+    display:block;
+}
+.modal-dialog {
+    min-width: 900px;
+}
+.modal-header{
+    display: block;
+    border-bottom: unset;
+}
+.close{
+    position: absolute;
+    top: 5px;
+    right: 15px;
+    font-size: 1.8rem;
+}
+h5{
+    color: blue;
+}
+button{
+    background: transparent;
+    border: unset !important;
+}
+@media (max-width: 640px){
+    .modal-dialog {
+        min-width: 90%;
+    }
+    .modal-dialog img{
+        max-width: 100%;
+    }
+}
