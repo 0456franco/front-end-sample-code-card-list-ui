@@ -21,6 +21,7 @@ export class ModalComponent implements OnInit {
   }
 
   ngOnInit(): void {
+    console.log("bodyText", this.bodyText)
   }
 
 }

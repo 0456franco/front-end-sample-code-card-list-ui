@@ -1,11 +1,12 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { ModalComponent } from './modal.component';
+import { SafeHtmlPipe } from '../shared/pipes/safe-html.pipe';
 
 @NgModule({
-  declarations: [ ModalComponent ],
+  declarations: [ ModalComponent, SafeHtmlPipe],
   imports: [
-    CommonModule
+    CommonModule,
   ],
   exports: [ ModalComponent ]
 })

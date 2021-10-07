@@ -21,11 +21,9 @@
             <div class="container-fluid">
 
                 <div class='row'>
-                    <div class="col-12 col-sm col-md col-lg">
-                        <p>
-                            {{ bodyText }}              
-                        </p>
-                    </div>             
+                    
+                    <div class="col-12 col-sm col-md col-lg"  [innerHtml]="bodyText | safeHtml"></div>
+         
                     <div class="col-12 col-sm col-md col-lg">
                         <img class='' [src]="photo" />
                     </div> 
